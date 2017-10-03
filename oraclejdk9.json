@@ -1,0 +1,25 @@
+{
+    "homepage": "http://www.oracle.com/technetwork/java/javase/overview/index.html",
+    "version": "9u181",
+    "architecture": {
+        "64bit": {
+            "url": "http://download.oracle.com/otn-pub/java/jdk/9+181/jdk-9_windows-x64_bin.exe",
+            "hash": "d4885a5fbd2dce383c579fe4a1569b6d8b5db1574af602e37cadcac781115297"
+        }
+    },
+    "cookie": {
+        "oraclelicense": "accept-securebackup-cookie"
+    },
+    "installer": {
+        "args": [
+            "/s",
+            "ADDLOCAL=\"ToolsFeature,SourceFeature\"",
+            "INSTALLDIR=$dir"
+        ],
+        "keep": "true"
+    },
+    "env_add_path": "bin",
+    "env_set": {
+        "JAVA_HOME": "$dir"
+    }
+}
