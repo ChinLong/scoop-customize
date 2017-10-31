@@ -1,0 +1,24 @@
+{
+    "homepage": "https://github.com/wnmp/wnmp",
+    "version": "3.1.0",
+    "url": "https://github.com/wnmp/wnmp/releases/download/3.1.0/Wnmp-3.1.0.7z#/dl.7z",
+    "hash": "md5:79958483fc4bfdfde3953b05d9f39f2f",
+    "extract_dir": "Wnmp",
+	"shortcuts": [
+        [
+            "Wnmp.exe",
+            "Wnmp"
+        ]
+    ],
+	"persist": "mariadb\\data",
+    "checkver": {
+        "url": "https://github.com/wnmp/wnmp/releases/latest",
+        "re": "download/(?<version>[\\d.]+)/Wnmp-(?<short>[\\d.]+).7z"
+    },
+    "autoupdate": {
+        "architecture": {
+            "url": "https://github.com/wnmp/wnmp/releases/download/v$matchVersion/jd-gui-windows-$matchShort.7z#/dl.7z",
+            "extract_dir": "Wnmp"
+        }
+    }
+}

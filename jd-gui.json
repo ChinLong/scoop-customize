@@ -1,0 +1,23 @@
+{
+    "homepage": "https://github.com/java-decompiler/jd-gui",
+    "version": "1.4.0",
+    "url": "https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui-windows-1.4.0.zip",
+    "hash": "md5:4cf79cbae4b355cf2b9cd332462491a8",
+    "extract_dir": "jd-gui-windows-1.4.0",
+	"shortcuts": [
+        [
+            "jd-gui.exe",
+            "jd-gui"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/java-decompiler/jd-gui/releases/latest",
+        "re": "v(?<version>[\\d\\w.]+)/jd-gui-windows-(?<short>[\\d.]+).*\\.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "url": "https://github.com/java-decompiler/jd-gui/releases/download/v$matchVersion/jd-gui-windows-$matchShort.zip",
+            "extract_dir": "jd-gui-windows-$matchVersion"
+        }
+    }
+}

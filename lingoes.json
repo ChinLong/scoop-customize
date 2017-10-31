@@ -5,8 +5,20 @@
     "hash": "md5:9A88E062A1C5B489C59BA36B59350B06",
 	"shortcuts": [
         [
-            "lingoes.exe",
-            "lingoes"
+            "Lingoes.exe",
+            "Lingoes"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "http://www.lingoes.net/en/translator/download.htm",
+        "re": "Lingoes (?<version>[\\d.]+) Portable"
+    },
+    "autoupdate": {
+        "architecture": {
+            "url": "http://www.slymandata.com/lingoes_mirror_europe/lingoes_portable_$matchVersion.zip"
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
 }

@@ -1,0 +1,40 @@
+{
+    "##": "Maintainers: when updating this manifest to a new version, you might like to also update git-with-openssh.json",
+    "homepage": "https://git-for-windows.github.io/",
+    "license": "GPL2",
+    "version": "2.14.3.windows.1",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/git-for-windows/git/releases/download/v2.14.3.windows.1/MinGit-2.14.3-64-bit.zip",
+            "hash": "538294d2b1472e561493b67855f92380d8139011c74be6bf3cdc5b5d321b1345"
+        },
+        "32bit": {
+            "url": "https://github.com/git-for-windows/git/releases/download/v2.14.3.windows.1/MinGit-2.14.3-32-bit.zip",
+            "hash": "a91385acb1da220612790807c41d0f304b41093c474b9d7342230ec194a3398e"
+        }
+    },
+    "bin": [
+        "cmd\\git.exe",
+        "usr\\bin\\sh.exe"
+    ],
+    "post_install": [
+        "git config --global credential.helper manager"
+    ],
+    "checkver": {
+        "url": "https://github.com/git-for-windows/git/releases/latest",
+        "re": "v(?<version>[\\d\\w.]+)/MinGit-(?<short>[\\d.]+).*\\.zip"
+    },
+    "env_set": {
+        "GIT_INSTALL_ROOT": "$dir"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/git-for-windows/git/releases/download/v$matchVersion/MinGit-$matchShort-64-bit.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/git-for-windows/git/releases/download/v$matchVersion/MinGit-$matchShort-32-bit.zip"
+            }
+        }
+    }
+}

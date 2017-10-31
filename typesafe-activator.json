@@ -10,5 +10,12 @@
     ],
     "env_set": {
         "ACTIVATOR_HOME": "$dir"
+    },
+    "autoupdate": {
+        "architecture": {
+            "url": "https://downloads.typesafe.com/typesafe-activator/1.3.12/typesafe-activator-1.3.12-minimal.zip",
+            "extract_dir": "activator-1.3.12-minimal"
+        },
+        "hash": "md5:0942a8da8af3f6a43b773451943c57b8"
     }
 }
