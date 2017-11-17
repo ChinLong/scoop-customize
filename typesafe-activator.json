@@ -11,6 +11,16 @@
     "env_set": {
         "ACTIVATOR_HOME": "$dir"
     },
+    "suggest": {
+        "JDK": [
+            "extras/oraclejdk",
+            "openjdk"
+        ],
+        "Scala":[
+            "scala" 
+        ]
+    },
+    "notes": "Activator will be EOL-ed on May 24, 2017.\r\nInstead of using the Activator command, make sure you have sbt 0.13.13 (or higher),and use the “sbt new” command, providing the name of the template.\r\nFor example, “$ sbt new akka/hello-akka.g8”. You can find a list of templates.",
     "autoupdate": {
         "architecture": {
             "url": "https://downloads.typesafe.com/typesafe-activator/1.3.12/typesafe-activator-1.3.12-minimal.zip",

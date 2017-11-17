@@ -10,13 +10,19 @@
             "jd-gui"
         ]
     ],
+    "suggest": {
+        "JDK": [
+            "extras/oraclejdk",
+            "openjdk"
+        ]
+    },
     "checkver": {
         "url": "https://github.com/java-decompiler/jd-gui/releases/latest",
-        "re": "v(?<version>[\\d\\w.]+)/jd-gui-windows-(?<short>[\\d.]+).*\\.zip"
+        "re": "JD-GUI (?<version>[\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
-            "url": "https://github.com/java-decompiler/jd-gui/releases/download/v$matchVersion/jd-gui-windows-$matchShort.zip",
+            "url": "https://github.com/java-decompiler/jd-gui/releases/download/v$matchVersion/jd-gui-windows-$matchVersion.zip",
             "extract_dir": "jd-gui-windows-$matchVersion"
         }
     }

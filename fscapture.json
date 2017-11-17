@@ -16,8 +16,8 @@
     },
     "autoupdate": {
         "architecture": {
-            "url": "http://www.faststonesoft.net/DN/FSCapture$majorVersion$minorVersion.zip",
-            "extract_dir": "FSCapture$majorVersion$minorVersion"
+            "url": "http://www.faststonesoft.net/DN/FSCapture$cleanVersion.zip",
+            "extract_dir": "FSCapture$cleanVersion"
         }
     }
 }

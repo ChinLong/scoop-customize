@@ -14,11 +14,6 @@
         "re": "Lingoes (?<version>[\\d.]+) Portable"
     },
     "autoupdate": {
-        "architecture": {
-            "url": "http://www.slymandata.com/lingoes_mirror_europe/lingoes_portable_$matchVersion.zip"
-        },
-        "hash": {
-            "url": "$url.sha256"
-        }
+        "url": "http://www.slymandata.com/lingoes_mirror_europe/lingoes_portable_$matchVersion.zip"
     }
 }

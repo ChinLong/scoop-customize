@@ -13,12 +13,11 @@
 	"persist": "mariadb\\data",
     "checkver": {
         "url": "https://github.com/wnmp/wnmp/releases/latest",
-        "re": "download/(?<version>[\\d.]+)/Wnmp-(?<short>[\\d.]+).7z"
+        "re": "Wnmp-(?<version>[\\d.]+)-RELEASE"
     },
     "autoupdate": {
         "architecture": {
-            "url": "https://github.com/wnmp/wnmp/releases/download/v$matchVersion/jd-gui-windows-$matchShort.7z#/dl.7z",
-            "extract_dir": "Wnmp"
+            "url": "https://github.com/wnmp/wnmp/releases/download/v$matchVersion/Wnmp-$matchVersion.7z#/dl.7z"
         }
     }
 }
