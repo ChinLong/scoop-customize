@@ -1,9 +1,9 @@
 {
     "homepage": "http://www.faststone.org",
-    "version": "8.6",
-    "url": "http://www.faststonesoft.net/DN/FSCapture86.zip",
-    "hash": "md5:fbd7eaef948de279bcab84348661e6af",
-    "extract_dir": "FSCapture86",
+    "version": "8.7",
+    "url": "http://www.faststonesoft.net/DN/FSCapture87.zip",
+    "hash": "1410e5956ffa08728358c39e78adbc074bc0a646070bdece68ca0b3b3adaa55e",
+    "extract_dir": "FSCapture87",
     "shortcuts": [
         [
             "FSCapture.exe",
