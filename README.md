@@ -22,8 +22,7 @@ Set system environment ```SCOOP``` and ```SCOOP_GLOBAL```.(Suggested)
 ##### Then Add buckets.
 
 
-add [scoop-extras](https://github.com/lukesampson/scoop-extras.git)
-add [versions](https://github.com/scoopinstaller/versions.git)
+add [scoop-extras](https://github.com/lukesampson/scoop-extras.git) and [versions](https://github.com/scoopinstaller/versions.git)
 
 ```bash
  scoop bucket add extras
@@ -53,7 +52,7 @@ add this bucket.
  scoop install heidisql jetbrains-toolbox jd-gui tortoisesvn zeal
  
  # make sure added customize bucket
- sudo scoop install typesafe-activator oraclejdk9 -g
+ sudo scoop install typesafe-activator oraclejdk9 oraclejdk10 -g
  scoop install fscapture lingoes sublime-text
 
 ```

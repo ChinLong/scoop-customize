@@ -1,0 +1,29 @@
+{
+    "homepage": "http://cxf.apache.org/index.html",
+    "license": "Apache 2.0",
+    "version": "3.2.3",
+    "url": "https://mirrors.tuna.tsinghua.edu.cn/apache/cxf/3.2.3/apache-cxf-3.2.3.zip",
+    "hash": "3f9138cbe36d15ebf407eb95ffc70d5a1f3e3ce65ee999f18c5015a8f0e11031",
+    "extract_dir": "apache-cxf-3.2.3",
+    "env_add_path": "bin",
+    "env_set": {
+        "CXF_HOME": "$dir"
+    },
+    "suggest": {
+        "JDK": [
+            "extras/oraclejdk",
+            "openjdk"
+        ]
+    },
+    "checkver": {
+        "url": "http://cxf.apache.org/download.html",
+        "re": "The (?<version>[\\d.]+) release is our latest release"
+    },
+    "autoupdate": {
+        "architecture": {
+            "url": "https://mirrors.tuna.tsinghua.edu.cn/apache/cxf/${matchVersion}/apache-cxf-${matchVersion}.zip",
+            "extract_dir": "apache-cxf-${matchVersion}",
+            "hash": "md5:https://www.apache.org/dist/cxf/${matchVersion}/apache-cxf-${matchVersion}.zip.md5"
+        }
+    }
+}
