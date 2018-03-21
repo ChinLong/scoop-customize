@@ -1,0 +1,25 @@
+{
+    "homepage": "http://office.qq.com/",
+    "version": "2.1.5.23141",
+    "url": "https://sm.myapp.com/original/im/TIM2.1.5-2.1.5.23141.exe",
+    "hash": "99dae0e510ad0e4e9ee1f9adb006fb98580bd987a28c4b441192a5badeed6fcf",
+    "installer": {
+        "args": [
+            "/S",
+            "/D=$dir"
+        ]
+    },
+    // "uninstaller": {
+    //     "file": "TIMUninst.exe",
+    //     "args": "/S"
+    // },
+    "checkver": {
+        "url": "https://pc.qq.com/detail/18/detail_23258.html",
+        "re": "版本：(?<version>[\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "url": "https://sm.myapp.com/original/im/TIM2.1.5-2.1.5.23141.exe"
+        }
+    }
+}
