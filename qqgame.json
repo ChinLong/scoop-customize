@@ -9,10 +9,6 @@
             "/D=$dir"
         ]
     },
-    // "uninstaller": {
-    //     "file": "QQGameUninst.exe",
-    //     "args": "/S"
-    // },
     "checkver": {
         "url": "https://pc.qq.com/detail/13/detail_8033.html",
         "re": "版本：(?<version>[\\d.]+)"
