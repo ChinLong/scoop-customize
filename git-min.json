@@ -1,15 +1,15 @@
 {
     "homepage": "https://git-for-windows.github.io/",
     "license": "GPL2",
-    "version": "v2.16.2.windows.1",
+    "version": "v2.17.1.windows.2",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/MinGit-2.16.2-64-bit.zip",
-            "hash": "f4ac4e7d53d599d515e905824240cc2b82f3e2c294a872bb650e44b7e89cae8c"
+            "url": "https://github.com/git-for-windows/git/releases/download/v2.17.1.windows.2/MinGit-2.17.1-64-bit.zip",
+            "hash": "52e611a411cd58eaaab8218bb917cb4410b0c5733f234be6e581c6a9821b30ea"
         },
         "32bit": {
-            "url": "https://github.com/git-for-windows/git/releases/download/v2.16.2.windows.1/MinGit-2.16.2-32-bit.zip",
-            "hash": "322c727e482aa97522c64a5ac68bdda3780111e8670bcfb532beac8e11ece5da"
+            "url": "https://github.com/git-for-windows/git/releases/download/v2.17.1.windows.2/MinGit-2.17.1-32-bit.zip",
+            "hash": "8ab37946bef8955a65f907d82483cb8a457f7404061ca59b8399d3623e9e691b"
         }
     },
     "bin": [

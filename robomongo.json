@@ -1,9 +1,9 @@
 {
     "homepage": "https://robomongo.org",
-    "version": "1.1.1",
-    "url": "https://download.robomongo.org/1.1.1/windows/robo3t-1.1.1-windows-x86_64-c93c6b0.zip",
-    "hash": "71ed7d585381b824403e5929bc1e6c3d04f6d22a7f3a8b5b7fb415a79971b04d",
-    "extract_dir": "robo3t-1.1.1-windows-x86_64-c93c6b0",
+    "version": "1.2.1",
+    "url": "https://download.robomongo.org/1.2.1/windows/robo3t-1.2.1-windows-x86_64-3e50a65.zip",
+    "hash": "8618179480E5788C38ED81E8A804B24EE57BF7D2902A42CB9597763E96670889",
+    "extract_dir": "robo3t-1.2.1-windows-x86_64-3e50a65",
 	"shortcuts": [
         [
             "robo3t.exe",
