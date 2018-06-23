@@ -2,7 +2,7 @@
     "homepage": "https://cxf.apache.org/index.html",
     "license": "Apache 2.0",
     "version": "3.2.4",
-    "url": "https://mirrors.tuna.tsinghua.edu.cn/apache/cxf/3.2.4/apache-cxf-3.2.4.zip",
+    "url": "https://www.apache.org/dist/cxf/3.2.4/apache-cxf-3.2.4.zip",
     "hash": "f7b428c5fb18000abd1a749a4f0f2ec14a6ee6f4cb840a425f41360cef0f1fd3",
     "extract_dir": "apache-cxf-3.2.4",
     "env_add_path": "bin",

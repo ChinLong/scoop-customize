@@ -10,7 +10,10 @@
             "Wnmp"
         ]
     ],
-	"persist": "mariadb\\data",
+	"persist": [
+        "conf",
+        "mariadb\\data"
+    ],
     "checkver": {
         "url": "https://github.com/wnmp/wnmp/releases/latest",
         "re": "Wnmp-(?<version>[\\d.]+)-RELEASE"

@@ -29,13 +29,16 @@ Set system environment ```SCOOP``` and ```SCOOP_GLOBAL```.(Suggested)
 add [official buckets](https://github.com/lukesampson/scoop/blob/master/buckets.json)
 
 ```bash
+
+ scoop install sudo 7zip git
+
  scoop bucket add extras
  scoop bucket add versions
  scoop bucket add nightlies
  scoop bucket add nirsoft
  scoop bucket add nerd-fonts
  scoop bucket add nonportable
- scoop bucket add java  
+ scoop bucket add java
 ```
 
 add this bucket.
@@ -52,17 +55,25 @@ add this bucket.
 
  scoop install sudo 7zip git
 
- sudo scoop install oraclejdk11 oraclejdk10 oraclejdk8 -g
- sudo scoop install kotlin scala python php nvm nodejs-lts -g
+ sudo scoop install oraclejdk oraclejdk11 oraclejdk10 oraclejdk8 -g
+ sudo scoop install kotlin scala groovy python php nvm nodejs-lts -g
+ sudo scoop install springboot -g
  sudo scoop install maven gradle sbt -g
  sudo scoop install docker docker-compose docker-machine -g 
  
- scoop install coreutils curl openssh grep wget
- scoop install chromium ccleaner shadowsocks notepadplusplus sublime-text
- scoop install heidisql jetbrains-toolbox jd-gui tortoisesvn zeal
- 
+ scoop install vcredist
+ scoop install coreutils curl openssh grep wget which sed tar telnet time
+ scoop install notepadplusplus notepadplusplus-pm sublime-text vscode everything
+ scoop install cmder heidisql jetbrains-toolbox jd-gui tortoisesvn zeal
+ scoop install chromium ccleaner shadowsocks
+
+#scoop install putty winscp
+#scoop install aria2 qbittorrent transmission
+#scoop install postgresql mariadb redis sqlite
+#scoop install elasticsearch kibana logstash
+
  # make sure added customize bucket
  sudo scoop install typesafe-activator -g
- scoop install fscapture lingoes
+ scoop install fscapture lingoes dns-jumper wnmp
 
 ```
