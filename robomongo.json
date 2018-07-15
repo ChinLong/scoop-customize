@@ -4,7 +4,7 @@
     "url": "https://download.robomongo.org/1.2.1/windows/robo3t-1.2.1-windows-x86_64-3e50a65.zip",
     "hash": "8618179480E5788C38ED81E8A804B24EE57BF7D2902A42CB9597763E96670889",
     "extract_dir": "robo3t-1.2.1-windows-x86_64-3e50a65",
-	"shortcuts": [
+    "shortcuts": [
         [
             "robo3t.exe",
             "Robo3t"

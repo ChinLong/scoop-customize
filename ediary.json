@@ -1,0 +1,16 @@
+{
+    "homepage": "http://www.haoxg.net/ediary",
+    "version": "3.3.5",
+    "url": "https://github.com/ChinLong/upload-files/raw/master/tools/ediary-3.3.5.zip",
+    "hash": "3FC9E4586259433B8C56A75DE5D1D24CC3FD9EBEC0FFE01E627188E6D09D0E5E",
+    "extract_dir": "eDiary-3.3.5",
+    "shortcuts": [
+        [
+            "eDiary.exe",
+            "eDiary"
+        ]
+    ],
+    "persist": [
+        "Users"
+    ]
+}

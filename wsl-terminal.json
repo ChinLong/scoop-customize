@@ -4,15 +4,15 @@
     "url": "https://github.com/goreliu/wsl-terminal/releases/download/v0.8.10/wsl-terminal-0.8.10.7z",
     "hash": "67f3c7e0d4581e986ba50d823af16cce693c45c540c7c75cce8f7ee5e9a1c79a",
     "extract_dir": "wsl-terminal",
-	"shortcuts": [
+    "shortcuts": [
         [
             "open-wsl.exe",
             "wsl-terminal"
         ]
     ],
     "checkver": {
-	    "url": "https://github.com/goreliu/wsl-terminal/releases/latest",
-	    "re": "/goreliu/wsl-terminal/releases/download/v(?<version>[\\d]+)/wsl-terminal-(?<version>[\\d.]+).7z"
+        "url": "https://github.com/goreliu/wsl-terminal/releases/latest",
+        "re": "/goreliu/wsl-terminal/releases/download/v(?<version>[\\d]+)/wsl-terminal-(?<version>[\\d.]+).7z"
     },
     "autoupdate": {
         "architecture": {

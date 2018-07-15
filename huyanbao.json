@@ -12,9 +12,9 @@
     ],
     "installer": {
         "args": [
-        	"/S",
-        	"/D=$dir"
-     	]
+            "/S",
+            "/D=$dir"
+        ]
     },
     "uninstaller": {
         "file": "uninst.exe",

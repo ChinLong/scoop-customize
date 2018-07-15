@@ -4,15 +4,16 @@
     "url": "https://github.com/wnmp/wnmp/releases/download/3.1.0/Wnmp-3.1.0.7z#/dl.7z",
     "hash": "345a523cb49cb57cda55866b9ff50d97829d6b992f8dd16516ecd8fad3eb0329",
     "extract_dir": "Wnmp",
-	"shortcuts": [
+    "shortcuts": [
         [
             "Wnmp.exe",
             "Wnmp"
         ]
     ],
-	"persist": [
+    "persist": [
         "conf",
-        "mariadb\\data"
+        "mariadb\\data",
+        "mariadb\\my.ini"
     ],
     "checkver": {
         "url": "https://github.com/wnmp/wnmp/releases/latest",
