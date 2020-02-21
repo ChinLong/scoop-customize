@@ -19,9 +19,12 @@ Set system environment ```SCOOP``` and ```SCOOP_GLOBAL```.(Suggested)
 
 ```bash
  set-executionpolicy remotesigned -scope currentuser
- [environment]::setEnvironmentVariable('SCOOP','D:\Scoop\User','User')
- [environment]::setEnvironmentVariable('SCOOP_GLOBAL','D:\Scoop\Global','Machine')
- iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+ $env:SCOOP='D:\Scoop\User'
+ $env:SCOOP_GLOBAL='D:\Scoop\Global'
+ [environment]::setEnvironmentVariable('SCOOP', $env:SCOOP, 'User')
+ [environment]::setEnvironmentVariable('SCOOP_GLOBAL', $env:SCOOP_GLOBAL, 'Machine')
+ 
+ Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh') 
 ```
 
 ##### Then Add buckets.
@@ -34,10 +37,6 @@ add [official buckets](https://github.com/lukesampson/scoop/blob/master/buckets.
 
  scoop bucket add extras
  scoop bucket add versions
- scoop bucket add nightlies
- scoop bucket add nirsoft
- scoop bucket add nerd-fonts
- scoop bucket add nonportable
  scoop bucket add java
 ```
 
@@ -55,7 +54,7 @@ add this bucket.
 
  scoop install sudo 7zip git
 
- sudo scoop install oraclejdk oraclejdk11 oraclejdk10 oraclejdk8 -g
+ sudo scoop install openjdk oraclejdk8 -g
  sudo scoop install kotlin scala groovy python php nvm nodejs-lts -g
  sudo scoop install springboot -g
  sudo scoop install maven gradle sbt -g
@@ -64,16 +63,13 @@ add this bucket.
  scoop install vcredist
  scoop install coreutils curl openssh grep wget which sed tar telnet time
  scoop install notepadplusplus notepadplusplus-pm sublime-text vscode everything
- scoop install cmder heidisql jetbrains-toolbox jd-gui tortoisesvn zeal
+ scoop install cmder jetbrains-toolbox jd-gui tortoisesvn zeal
  scoop install chromium ccleaner shadowsocks
 
-#scoop install putty winscp
 #scoop install aria2 qbittorrent transmission
-#scoop install postgresql mariadb redis sqlite
+#scoop install postgresql mysql mariadb redis sqlite heidisql
 #scoop install elasticsearch kibana logstash
 
- # make sure added customize bucket
- sudo scoop install typesafe-activator -g
  scoop install fscapture lingoes dns-jumper wnmp
 
 ```

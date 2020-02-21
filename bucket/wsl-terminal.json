@@ -1,0 +1,23 @@
+{
+    "homepage": "https://github.com/mskyaxl/wsl-terminal",
+    "version": "0.9.0",
+    "url": "https://github.com/mskyaxl/wsl-terminal/releases/download/v0.9.0/wsl-terminal-0.9.0.7z",
+    "hash": "f9ee4336fb2fe3300a802c5bf4b20f0ebc2b6ed64319adabe5815de85ecc5d2a",
+    "extract_dir": "wsl-terminal",
+    "shortcuts": [
+        [
+            "open-wsl.exe",
+            "wsl-terminal"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/mskyaxl/wsl-terminal/releases/latest",
+        "re": "/mskyaxl/wsl-terminal/releases/download/v(?<version>[\\d]+)/wsl-terminal-(?<version>[\\d.]+).7z"
+    },
+    "autoupdate": {
+        "architecture": {
+            "url": "https://github.com/mskyaxl/wsl-terminal/releases/download/v$matchVersion/wsl-terminal-$matchVersion.7z",
+            "extract_dir": "wsl-terminal"
+        }
+    }
+}
