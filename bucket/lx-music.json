@@ -1,0 +1,21 @@
+{
+    "homepage": "https://github.com/lyswhut/lx-music-desktop",
+    "version": "0.18.2",
+	"architecture": {
+        "64bit": {
+            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v0.18.2/lx-music-desktop-v0.18.2-win_x64-green.7z#/dl.7z",
+            "hash": "e11b11663b4da7e90509e9a48067d0ab54f327f676ccfe0728c1d0540f6d82c0"
+        },
+        "32bit": {
+            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v0.18.2/lx-music-desktop-v0.18.2-win_x86-green.7z#/dl.7z",
+            "hash": "c35e9354f59d169727ba3654ae0f34ab8bbe03560fc1864778ba9a4eacf0cfe9"
+        }
+    },
+    "extract_dir": "",
+    "shortcuts": [
+        [
+            "lx-music-desktop.exe",
+            "LX-Music"
+        ]
+    ]
+}
