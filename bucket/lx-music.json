@@ -1,14 +1,14 @@
 {
     "homepage": "https://github.com/lyswhut/lx-music-desktop",
-    "version": "0.18.2",
+    "version": "1.0.1",
 	"architecture": {
         "64bit": {
-            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v0.18.2/lx-music-desktop-v0.18.2-win_x64-green.7z#/dl.7z",
-            "hash": "e11b11663b4da7e90509e9a48067d0ab54f327f676ccfe0728c1d0540f6d82c0"
+            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v1.0.1/lx-music-desktop-v1.0.1-win_x64-green.7z#/dl.7z",
+            "hash": "e26fabe8cba5521474ac83c5c80cb849b8efd4f3fddaa23cf00443d4d0a1d025"
         },
         "32bit": {
-            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v0.18.2/lx-music-desktop-v0.18.2-win_x86-green.7z#/dl.7z",
-            "hash": "c35e9354f59d169727ba3654ae0f34ab8bbe03560fc1864778ba9a4eacf0cfe9"
+            "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v1.0.1/lx-music-desktop-v1.0.1-win_x86-green.7z#/dl.7z",
+            "hash": "ea907e74d70ef300117255e865e6dbb52d25bb31bbe353ca52b92b27ea04c586"
         }
     },
     "extract_dir": "",
